@@ -1,0 +1,1 @@
+add_executable(ex00 main.cpp Bureaucrat.cpp Bureaucrat.hpp)
