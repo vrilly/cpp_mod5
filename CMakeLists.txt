@@ -10,3 +10,4 @@ if (CMAKE_BUILD_TYPE STREQUAL "Debug")
 endif ()
 
 add_subdirectory(ex00)
+add_subdirectory(ex01)

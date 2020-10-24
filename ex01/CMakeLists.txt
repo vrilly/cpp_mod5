@@ -1,0 +1,1 @@
+add_executable(ex01 main.cpp Bureaucrat.cpp Bureaucrat.hpp Form.cpp Form.hpp)
