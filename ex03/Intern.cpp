@@ -10,9 +10,7 @@ const Intern::formLookupTableEntry Intern::formLookupTable[3] =
      {"shrubbery creation", ShrubberyCreationForm::constructor},
      {"presidential pardon", PresidentialPardonForm::constructor}};
 
-Intern::Intern()
-{
-}
+Intern::Intern() {}
 
 Intern::Intern(const Intern &intern)
 {
@@ -25,10 +23,7 @@ Intern &Intern::operator=(const Intern &intern)
     return *this;
 }
 
-Intern::~Intern()
-{
-
-}
+Intern::~Intern() {}
 
 Form *Intern::makeForm(const std::string &form, const std::string &target) const
 {

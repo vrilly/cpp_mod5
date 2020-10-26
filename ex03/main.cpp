@@ -88,5 +88,10 @@ int main()
     form = shittyIntern.makeForm("shrubbery creation", "white house");
     gardener.signForm(form);
     gardener.executeForm(*form);
+    trySignExecuteForm(new Bureaucrat("President", 1), shittyIntern.makeForm
+			("robotomy request", "robot president"));
+	trySignExecuteForm(new Bureaucrat("President", 1), shittyIntern.makeForm
+			("presidential pardon", "ze pardon"));
+	delete form;
     return 0;
 }

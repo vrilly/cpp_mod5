@@ -4,13 +4,11 @@
 
 RobotomyRequestForm::RobotomyRequestForm(const std::string &target)
     : Form(target, 72, 45)
-{
-}
+{}
 
 RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &form)
     : Form(form)
-{
-}
+{}
 
 RobotomyRequestForm &
 RobotomyRequestForm::operator=(const RobotomyRequestForm &form)
@@ -19,10 +17,7 @@ RobotomyRequestForm::operator=(const RobotomyRequestForm &form)
     return *this;
 }
 
-RobotomyRequestForm::~RobotomyRequestForm()
-{
-
-}
+RobotomyRequestForm::~RobotomyRequestForm() {}
 
 Form *RobotomyRequestForm::constructor(const std::string &target)
 {
@@ -46,9 +41,7 @@ const char *RobotomyRequestForm::FailedExecutionException::what() const throw()
     return "Robotomization failed!";
 }
 
-RobotomyRequestForm::FailedExecutionException::FailedExecutionException()
-{
-}
+RobotomyRequestForm::FailedExecutionException::FailedExecutionException() {}
 
 RobotomyRequestForm::FailedExecutionException::FailedExecutionException(const RobotomyRequestForm::FailedExecutionException &exception)
 {
@@ -62,6 +55,5 @@ RobotomyRequestForm::FailedExecutionException::operator=(const RobotomyRequestFo
     return *this;
 }
 
-RobotomyRequestForm::FailedExecutionException::~FailedExecutionException() _NOEXCEPT
-{
-}
+RobotomyRequestForm::FailedExecutionException::~FailedExecutionException()
+_NOEXCEPT {}

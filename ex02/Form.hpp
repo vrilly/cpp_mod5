@@ -15,8 +15,8 @@ class Form
     bool formSigned;
     int gradeTresholdSigning;
     int gradeTresholdExecute;
+	Form();
 protected:
-    Form();
     void execute(const Bureaucrat &executor) const;
 public:
     Form(const std::string &name,

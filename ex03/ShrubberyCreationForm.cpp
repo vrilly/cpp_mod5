@@ -8,7 +8,8 @@ void ShrubberyCreationForm::beExecuted(const Bureaucrat &executor) const
     execute(executor);
     try
     {
-        std::ofstream fos(getName(), std::ofstream::out | std::ofstream::trunc);
+        std::ofstream fos(getName() + "_shrubbery", std::ofstream::out |
+        std::ofstream::trunc);
         if (!fos.good())
         {
             fos.close();
@@ -25,13 +26,11 @@ void ShrubberyCreationForm::beExecuted(const Bureaucrat &executor) const
 
 ShrubberyCreationForm::ShrubberyCreationForm(const std::string &target)
     : Form(target + "_shrubbery", 145, 137)
-{
-}
+{}
 
 ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &form)
     : Form(form)
-{
-}
+{}
 
 ShrubberyCreationForm &
 ShrubberyCreationForm::operator=(const ShrubberyCreationForm &form)
@@ -40,10 +39,7 @@ ShrubberyCreationForm::operator=(const ShrubberyCreationForm &form)
     return *this;
 }
 
-ShrubberyCreationForm::~ShrubberyCreationForm()
-{
-
-}
+ShrubberyCreationForm::~ShrubberyCreationForm() {}
 
 Form *ShrubberyCreationForm::constructor(const std::string &target)
 {

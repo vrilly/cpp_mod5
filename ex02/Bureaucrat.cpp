@@ -22,13 +22,7 @@ int Bureaucrat::getGrade() const
     return grade;
 }
 
-Bureaucrat::Bureaucrat()
-{
-}
-
-Bureaucrat::~Bureaucrat()
-{
-}
+Bureaucrat::~Bureaucrat() {}
 
 Bureaucrat::Bureaucrat(const Bureaucrat &bureaucrat)
 {
@@ -77,13 +71,9 @@ void Bureaucrat::signForm(Form *form)
     }
 }
 
-Bureaucrat::GradeTooHighException::GradeTooHighException()
-{}
+Bureaucrat::GradeTooHighException::GradeTooHighException() {}
 
-Bureaucrat::GradeTooHighException::~GradeTooHighException() _NOEXCEPT
-{
-
-}
+Bureaucrat::GradeTooHighException::~GradeTooHighException() _NOEXCEPT {}
 
 Bureaucrat::GradeTooHighException::GradeTooHighException(const Bureaucrat::GradeTooHighException &gradeTooHighException)
 {
@@ -102,15 +92,9 @@ const char *Bureaucrat::GradeTooHighException::what() const throw()
     return "Grade too High!";
 }
 
-Bureaucrat::GradeTooLowException::GradeTooLowException()
-{
+Bureaucrat::GradeTooLowException::GradeTooLowException() {}
 
-}
-
-Bureaucrat::GradeTooLowException::~GradeTooLowException() _NOEXCEPT
-{
-
-}
+Bureaucrat::GradeTooLowException::~GradeTooLowException() _NOEXCEPT {}
 
 Bureaucrat::GradeTooLowException::GradeTooLowException(const Bureaucrat::GradeTooLowException &gradeTooLowException)
 {

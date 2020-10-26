@@ -4,14 +4,11 @@
 
 PresidentialPardonForm::PresidentialPardonForm(const std::string &target)
     : Form(target, 25, 5)
-{
-}
+{}
 
 PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &form)
     : Form(form)
-{
-
-}
+{}
 
 PresidentialPardonForm &
 PresidentialPardonForm::operator=(const PresidentialPardonForm &form)
@@ -21,9 +18,7 @@ PresidentialPardonForm::operator=(const PresidentialPardonForm &form)
 }
 
 PresidentialPardonForm::~PresidentialPardonForm()
-{
-
-}
+{}
 
 void PresidentialPardonForm::beExecuted(const Bureaucrat &executor) const
 {

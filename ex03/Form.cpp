@@ -35,11 +35,6 @@ Form::Form(const std::string &name,
         throw GradeTooHighException();
 }
 
-Form::Form()
-{
-
-}
-
 Form::Form(const Form &form)
 {
     *this = form;
@@ -56,15 +51,9 @@ Form &Form::operator=(const Form &form)
     return *this;
 }
 
-Form::~Form()
-{
+Form::~Form() {}
 
-}
-
-Form::GradeTooHighException::GradeTooHighException()
-{
-
-}
+Form::GradeTooHighException::GradeTooHighException() {}
 
 Form::GradeTooHighException::GradeTooHighException(const Form::GradeTooHighException &exception)
 {
@@ -78,20 +67,14 @@ Form::GradeTooHighException::operator=(const Form::GradeTooHighException &except
     return *this;
 }
 
-Form::GradeTooHighException::~GradeTooHighException() _NOEXCEPT
-{
-
-}
+Form::GradeTooHighException::~GradeTooHighException() _NOEXCEPT {}
 
 const char *Form::GradeTooHighException::what() const throw()
 {
     return "Grade too high!";
 }
 
-Form::GradeTooLowException::GradeTooLowException()
-{
-
-}
+Form::GradeTooLowException::GradeTooLowException() {}
 
 Form::GradeTooLowException::GradeTooLowException(const Form::GradeTooLowException &exception)
 {
@@ -105,20 +88,14 @@ Form::GradeTooLowException::operator=(const Form::GradeTooLowException &exceptio
     return *this;
 }
 
-Form::GradeTooLowException::~GradeTooLowException() _NOEXCEPT
-{
-
-}
+Form::GradeTooLowException::~GradeTooLowException() _NOEXCEPT {}
 
 const char *Form::GradeTooLowException::what() const throw()
 {
     return "Grade too low!";
 }
 
-Form::FormNotSignedException::FormNotSignedException()
-{
-
-}
+Form::FormNotSignedException::FormNotSignedException() {}
 
 Form::FormNotSignedException::FormNotSignedException(const Form::FormNotSignedException &exception)
 {
@@ -132,10 +109,7 @@ Form::FormNotSignedException::operator=(const Form::FormNotSignedException &exce
     return *this;
 }
 
-Form::FormNotSignedException::~FormNotSignedException() _NOEXCEPT
-{
-
-}
+Form::FormNotSignedException::~FormNotSignedException() _NOEXCEPT {}
 
 const char *Form::FormNotSignedException::what() const _NOEXCEPT
 {
