@@ -1,4 +1,4 @@
-NAME = ex02
+NAME = ex03
 
 OBJS =	main.o Bureaucrat.o Form.o \
 		PresidentialPardonForm.o \
